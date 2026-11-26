@@ -1,0 +1,10 @@
+# 复制为 terraform.tfvars 并填入实际值后执行 terraform apply
+# 凭据请勿写在此文件，统一通过环境变量 HW_ACCESS_KEY / HW_SECRET_KEY / HW_PROJECT_ID 注入
+
+region                 = "cn-north-4"
+name_prefix            = "cbr-backup-alarms"
+email_endpoint         = "ops@example.com"
+create_cbr_resources   = true
+cbr_vault_type         = "server"
+cbr_vault_size_gb      = 200
+backup_execution_time  = "06:00"
